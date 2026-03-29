@@ -1,85 +1,109 @@
 Hotel Management System
+A Python + MySQL powered backend project for real-world hotel operations
 
-A Python + MySQL based console application to manage hotel operations including guest records, bookings, billing, and restaurant services.
+⚡ Quick Summary:
+Manage guests, bookings, room allocation, restaurant billing, and generate invoices — all in one system.
 
-📖 Overview
+🚀 Why This Project Matters
 
-This project is a database-driven hotel management system that simulates real-world operations. It integrates Python with MySQL to ensure structured data storage and efficient workflow management.
+Most beginner projects are CRUD-only.
+This one goes further by combining:
 
-🚀 Features
-👤 Guest Management
-Add and store guest details
-Retrieve guest records using Guest ID
-🛏️ Booking System
-Manage check-in and check-out dates
-Maintain booking records
-💰 Room Management
-Multiple room categories:
-Ultra Royal — ₹10,000/day
-Royal — ₹5,000/day
-Elite — ₹3,500/day
-Budget — ₹2,500/day
-Automatic rent calculation
-🍽️ Restaurant Billing
-Menu-based ordering system
-Dynamic bill calculation
-🧾 Final Billing
-Combines all charges
-Displays complete invoice
+Database design
+Business logic (billing, booking flow)
+Multi-module interaction
+
+👉 It reflects a mini real-world backend system
+
+✨ Core Features
+👤 Guest Module
+
+✔ Register new guests
+✔ Store complete profile data
+✔ Retrieve records instantly
+
+🛏️ Booking Module
+
+✔ Manage check-in / check-out
+✔ Maintain booking history
+
+💰 Room Engine
+
+Dynamic pricing system based on room type
+
+Room Type	Price (per day)
+Ultra Royal	₹10,000
+Royal	₹5,000
+Elite	₹3,500
+Budget	₹2,500
+🍽️ Restaurant Module
+
+✔ Menu-driven ordering
+✔ Quantity-based billing
+
+🧾 Billing System
+
+Combines all services into one final invoice
+
+Room Rent + Restaurant Bill = Total Amount
 🛠️ Tech Stack
-Language: Python
-Database: MySQL
-Library: mysql-connector-python
-🗄️ Database Schema
-Table Name	Purpose
-C_DETAILS	Guest information
-BOOKING_RECORD	Booking details
-ROOM_RENT	Room allocation & rent
-Restaurant	Food orders
-TOTAL	Final billing
-⚙️ Setup Instructions
-1️⃣ Install Dependencies
++ Python          → Core logic
++ MySQL           → Data storage
++ mysql-connector → DB integration
+🗄️ Database Design
+
+Automatically created on first run
+
+HMS DATABASE
+│
+├── C_DETAILS        → Guest info
+├── BOOKING_RECORD   → Stay records
+├── ROOM_RENT        → Room data
+├── Restaurant       → Orders
+└── TOTAL            → Final bill
+⚙️ Setup (Simple & Fast)
+1. Install dependency
 pip install mysql-connector-python
-2️⃣ Run the Program
+2. Run project
 python your_file_name.py
-3️⃣ Database Setup
-Enter MySQL credentials when prompted
-Database HMS will be created automatically
-📋 Menu
-1 → Add Guest Details  
-2 → Booking Details  
-3 → Room Rent  
-4 → Restaurant Bill  
-5 → View Guest  
-6 → Generate Bill  
-7 → Exit  
-🧠 Key Concepts
-SQL integration with Python
-CRUD operations
-Modular function design
-Persistent data storage
-⚠️ Limitations
-No GUI (console-based)
-Basic validation
-Uses global variables
-No authentication
-🔮 Future Scope
-GUI / Web-based interface
-Login system
-Payment integration
-Advanced database design
+3. Enter MySQL credentials
+
+✔ Database auto-created
+✔ Tables auto-managed
+
+🎮 How It Works
+START
+  ↓
+Enter Guest → Booking → Room → Food → Bill
+  ↓
+END
+📋 Menu Interface
+1  → Guest Entry  
+2  → Booking  
+3  → Room Rent  
+4  → Restaurant  
+5  → View Guest  
+6  → Generate Bill  
+7  → Exit  
+🧠 What You Learn
+Real DB integration
+Structured program flow
+Multi-module coordination
+Backend system thinking
+⚠️ Current Limitations
+
+❌ No GUI
+❌ Minimal validation
+❌ Global variables used
+❌ No login/auth
+
+🔮 Future Upgrades
+
+✨ Web App (React / Flask)
+✨ Admin Dashboard
+✨ Payment Gateway
+✨ Better DB normalization
+
 👨‍💻 Author
 
 Mayank Pawar
-
-📎 Source
-
-Code reference:
-
-🔥 Why This Looks Professional
-Proper heading hierarchy (#, ##, ###)
-Clean spacing and sections
-Use of bold text for emphasis
-Tables for structure
-Code blocks for commands
-Emojis used sparingly for readability
